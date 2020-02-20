@@ -1,11 +1,10 @@
-GOCMD=go
-BINARY_NAME=odis
+BUILD_FILES = $(shell go list -f '{{range .GoFiles}}{{$$.Dir}}/{{.}}\
+{{end}}' ./...)
 
-all: clean build
+BINARY_NAME=bank
 
-build:
-	go build -o bin/$(BINARY_NAME) ./cli/
+bin/bank: $(BUILD_FILES)
+	@go build -o "$@" ./cmd/bank
 
 clean:
-	go clean
 	rm -rf bin

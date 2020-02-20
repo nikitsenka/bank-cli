@@ -1,4 +1,4 @@
-module github.nike.com/odis/cli
+module github.com/nikitsenka/bank-cli
 
 go 1.13
 

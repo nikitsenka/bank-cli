@@ -1,5 +1,5 @@
 ## About the project
-Command line interface for ODIS REST API interactions
+Command line interface for [the BANK REST API](https://github.com/nikitsenka/bank-go) interactions
 
 ### build:
 ```
@@ -8,7 +8,7 @@ make
 
 ### Run:
 ```
-./bin/odis
+./bin/bank
 ```
 
 ### Release:
